@@ -10,4 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: test
-      run: make -C runtest test_seed
+      run: |
+        git clone -b vp-test1 https://github.com/vismid86/ManUProject.git
+        cd ManUProject
+        make -C runtest test_seed
