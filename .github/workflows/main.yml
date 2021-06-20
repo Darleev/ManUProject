@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: test
       run: |
-        git clone -b vp-test1 https://github.com/vismid86/ManUProject.git
+        git clone -b vp-test1 https://github.com/Darleev/ManUProject.git
         cd ManUProject
         make -C runtest test_seed
